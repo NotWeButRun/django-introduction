@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}書籍の情報更新{% endblock %}
+
+{% block content %}
+    <form method="POST">{% csrf_token %}
+        <button type="submit"> {{object.title}} を削除！ </button>
+    </form>
+{% endblock content %}
